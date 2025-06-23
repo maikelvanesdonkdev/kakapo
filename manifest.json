@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Kakapo The Bird Joke Teller",
+  "description": "Let Kakapo the Bird tell you random jokes in your browser!",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/peedy-icon-16.png",
+      "48": "icons/peedy-icon-48.png",
+      "128": "icons/peedy-icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/peedy-icon-16.png",
+    "48": "icons/peedy-icon-48.png",
+    "128": "icons/peedy-icon-128.png"
+  },
+  "host_permissions": [
+    "https://official-joke-api.appspot.com/*"
+  ]
+}
